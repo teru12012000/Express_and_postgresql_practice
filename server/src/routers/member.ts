@@ -22,6 +22,7 @@ router.get("/all",(req:Request,res:Response)=>{
 });
 router.post("/post",(req:Request,res:Response)=>{
   const {name,email,password,age,hobby}=req.body;
+  const numage:number=Number(age);
   pool.query("SELECT s FROM users1 s WHERE s.email = $1",[email],async(err,resulut)=>{
     if(err){
       //console.log("こっちだよ！");
@@ -38,7 +39,7 @@ router.post("/post",(req:Request,res:Response)=>{
         name,
         email,
         hashuedPassword,
-        age,
+        numage,
         hobby
       ],(err,result)=>{
         if(err){

@@ -1,8 +1,10 @@
 import express from "express";
 import { router } from "./routers/member";
+import cors from "cors";
 const app=express();
 const port=5050;
 
+app.use(cors());
 app.use(express.json());//json型を使えるように
 app.use("/member",router);//ルーティング
 app.listen(port,()=>{

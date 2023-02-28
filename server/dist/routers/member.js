@@ -38,6 +38,7 @@ exports.router.get("/all", (req, res) => {
 });
 exports.router.post("/post", (req, res) => {
     const { name, email, password, age, hobby } = req.body;
+    const numage = Number(age);
     db_1.pool.query("SELECT s FROM users1 s WHERE s.email = $1", [email], (err, resulut) => __awaiter(void 0, void 0, void 0, function* () {
         if (err) {
             //console.log("こっちだよ！");
@@ -56,7 +57,7 @@ exports.router.post("/post", (req, res) => {
                 name,
                 email,
                 hashuedPassword,
-                age,
+                numage,
                 hobby
             ], (err, result) => {
                 if (err) {
