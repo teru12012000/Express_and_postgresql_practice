@@ -7,7 +7,17 @@
 
 ## 使用した技術
 
-- Next.js
-- TypeScript
-- Bootstrap
-- Materual-ui
+- frontend
+  - Node.js
+  - TypeScript
+  - Express
+  - pg
+  - bcrypt
+  - postgreSQL
+- server
+  - Node.js
+  - TypeScript
+  - Express
+  - pg
+  - bcrypt
+  - postgreSQL

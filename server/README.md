@@ -18,17 +18,9 @@ SQL と連係してメンバー登録と閲覧のサーバー側の API を作�
 
 ## 使用した技術
 
-- frontend
-  - Node.js
-  - TypeScript
-  - Express
-  - pg
-  - bcrypt
-  - postgreSQL
-- server
-  - Node.js
-  - TypeScript
-  - Express
-  - pg
-  - bcrypt
-  - postgreSQL
+- Node.js
+- TypeScript
+- Express
+- pg
+- bcrypt
+- postgreSQL
